@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('books');
 });
 
+// GET /books/add
+router.get('/add', (req, res, next) => {
+  res.render('book-add');
+});
+
 module.exports = router;
